@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Ada Lovelace",
+    "memberStatus": "Board Team Member",
+    "leetcode": {
+      "status": "error",
+      "rating": null,
+      "username": "ada_l"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "1382",
+      "username": "adalovelace"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "not-found",
+      "rating": null,
+      "username": "ada1815"
+    },
+    "updatedAt": "2026-09-22T06:52:45.196Z"
+  },
+  {
+    "name": "Alan Turing",
+    "memberStatus": "Retired",
+    "leetcode": {
+      "status": "error",
+      "rating": null,
+      "username": "turing_a"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "1398",
+      "username": "aturing"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": "alant"
+    },
+    "atcoder": {
+      "status": "not-found",
+      "rating": null,
+      "username": "alanturing"
+    },
+    "updatedAt": "2026-09-22T06:52:45.196Z"
+  },
+  {
+    "name": "Grace Hopper",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "grace_h"
+    },
+    "codeforces": {
+      "status": "error",
+      "rating": null,
+      "username": "graceh"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": "hopper_c"
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-09-22T06:52:45.196Z"
+  },
+  {
+    "name": "Linus Torvalds",
+    "memberStatus": "Junior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "torvalds"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-09-22T06:52:45.196Z"
+  },
+  {
+    "name": "Margaret Hamilton",
+    "memberStatus": "Junior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "m_hamilton"
+    },
+    "codeforces": {
+      "status": "error",
+      "rating": null,
+      "username": "m_hamilton"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": "mhamilton"
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-09-22T06:52:45.196Z"
+  }
+]

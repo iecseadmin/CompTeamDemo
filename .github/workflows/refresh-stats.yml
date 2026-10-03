@@ -1,0 +1,64 @@
+name: Refresh Ratings and Deploy
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+          
+      - name: Install dependencies
+        shell: pwsh
+        run: npm ci
+
+      - name: Validate data schemas
+        shell: pwsh
+        run: npm run validate:data
+        
+      - name: Check deprecated dependencies
+        shell: pwsh
+        run: npm run check:deprecated
+        
+      - name: Fetch updated ratings
+        shell: pwsh
+        run: npm run fetch:ratings
+        
+      - name: Build static site
+        shell: pwsh
+        run: npm run build
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

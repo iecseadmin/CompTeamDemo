@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Ada Lovelace",
+    "leetcodeUsername": "ada_l",
+    "codeforcesUsername": "adalovelace",
+    "codechefUsername": null,
+    "atcoderUsername": "ada1815",
+    "memberStatus": "Board Team Member"
+  },
+  {
+    "name": "Grace Hopper",
+    "leetcodeUsername": "grace_h",
+    "codeforcesUsername": "graceh",
+    "codechefUsername": "hopper_c",
+    "atcoderUsername": null,
+    "memberStatus": "Senior Team"
+  },
+  {
+    "name": "Alan Turing",
+    "leetcodeUsername": "turing_a",
+    "codeforcesUsername": "aturing",
+    "codechefUsername": "alant",
+    "atcoderUsername": "alanturing",
+    "memberStatus": "Retired"
+  },
+  {
+    "name": "Margaret Hamilton",
+    "leetcodeUsername": "m_hamilton",
+    "codeforcesUsername": "m_hamilton",
+    "codechefUsername": "mhamilton",
+    "atcoderUsername": null,
+    "memberStatus": "Junior Team"
+  },
+  {
+    "name": "Linus Torvalds",
+    "leetcodeUsername": "torvalds",
+    "codeforcesUsername": null,
+    "codechefUsername": null,
+    "atcoderUsername": null,
+    "memberStatus": "Junior Team"
+  }
+]

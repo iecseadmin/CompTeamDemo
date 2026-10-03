@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-09-01",
+    "event": "Template Regional Contest",
+    "position": "1st",
+    "eventDescription": "Short factual description of the result.",
+    "postUrl": "https://example.com/team-post"
+  },
+  {
+    "date": "2025-10-15",
+    "event": "Template Inter-College Competition",
+    "position": "3rd",
+    "eventDescription": "Participated in the annual programming event. Secured a podium finish.",
+    "postUrl": null
+  }
+]
