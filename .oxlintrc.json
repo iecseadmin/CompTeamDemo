@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn"
+  },
+  "plugins": ["import", "jsx-a11y", "oxc", "react", "typescript"],
+  "rules": {
+    "import/no-unassigned-import": "off",
+    "no-underscore-dangle": "off",
+    "react/react-in-jsx-scope": "off",
+    "typescript/no-explicit-any": "error"
+  }
+}

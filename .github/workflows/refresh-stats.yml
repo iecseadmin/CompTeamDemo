@@ -35,6 +35,18 @@ jobs:
         shell: pwsh
         run: npm ci
 
+      - name: Lint source
+        shell: pwsh
+        run: npm run lint
+
+      - name: Lint CSS
+        shell: pwsh
+        run: npm run lint:css
+
+      - name: Lint HTML
+        shell: pwsh
+        run: npm run lint:html
+
       - name: Validate data schemas
         shell: pwsh
         run: npm run validate:data

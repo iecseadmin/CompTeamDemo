@@ -183,6 +183,31 @@ a:focus-visible {
   font-size: 0.85rem;
 }
 
+.update-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+.update-row p {
+  margin-bottom: 0;
+}
+
+.retired-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.retired-toggle input {
+  margin: 0;
+  accent-color: var(--accent);
+}
+
 /* Tables */
 .table-wrapper {
   overflow-x: auto;
@@ -237,6 +262,35 @@ tr:hover td {
 .col-name { width: 30%; font-weight: 500; }
 .col-status { width: 22%; }
 .col-rating { width: 12%; }
+
+.roonil-name {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.roonil-name::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: linear-gradient(110deg, transparent 30%, #d9ad59 50%, transparent 70%);
+  opacity: 0;
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.roonil-name:hover::after {
+  animation: roonil-gold-streak 700ms ease-in-out 1;
+}
+
+@keyframes roonil-gold-streak {
+  10%, 80% { opacity: 0.85; }
+  100% { opacity: 0; transform: translateX(100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .roonil-name:hover::after { animation: none; }
+}
 
 .status-badge {
   display: inline-block;

@@ -1,1 +1,5 @@
 node_modules/
+dist/
+.npm-cache/
+**/.vscode/
+tools/csv-to-members-json/team_usernames.csv
