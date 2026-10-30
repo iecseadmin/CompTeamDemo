@@ -183,6 +183,31 @@ a:focus-visible {
   font-size: 0.85rem;
 }
 
+.update-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+.update-row p {
+  margin-bottom: 0;
+}
+
+.retired-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.retired-toggle input {
+  margin: 0;
+  accent-color: var(--accent);
+}
+
 /* Tables */
 .table-wrapper {
   overflow-x: auto;

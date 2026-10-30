@@ -3,11 +3,18 @@ import offlineEventsData from './data/offline-events.json';
 import ratingsData from './data/ratings.json';
 
 type ViewState = 'online' | 'offline';
-type SortKey = 'name' | 'leetcode' | 'codeforces' | 'codechef' | 'atcoder';
+type SortKey = 'name' | 'status' | 'leetcode' | 'codeforces' | 'codechef' | 'atcoder';
 type SortOrder = 'asc' | 'desc';
 type RatingValue = { username: string | null, rating: string | number | null, status: string };
-type RatingKey = Exclude<SortKey, 'name'>;
+type RatingKey = Exclude<SortKey, 'name' | 'status'>;
 type RatingRow = typeof ratingsData[number];
+
+const statusRank: Record<string, number> = {
+  'Board Team Member': 0,
+  'Senior Team': 1,
+  'Junior Team': 2,
+  Retired: 3,
+};
 
 function Navigation({ currentView, setView }: { currentView: ViewState, setView: (v: ViewState) => void }) {
   return (
@@ -63,21 +70,27 @@ function OnlineStats() {
   
   const [sortKey, setSortKey] = useState<SortKey>('name');
   const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
+  const [showRetired, setShowRetired] = useState(true);
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
       setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
     } else {
       setSortKey(key);
-      setSortOrder('desc'); // default to desc for numeric ratings, we can handle 'name' specially in the switch
+      setSortOrder(key === 'status' ? 'asc' : 'desc');
     }
   };
 
   const sortedData = useMemo(() => {
-    return [...ratingsData].sort((a, b) => {
+    return ratingsData.filter((member) => showRetired || member.memberStatus !== 'Retired').sort((a, b) => {
       if (sortKey === 'name') {
         const cmp = a.name.localeCompare(b.name);
         return sortOrder === 'asc' ? cmp : -cmp;
+      }
+
+      if (sortKey === 'status') {
+        const cmp = statusRank[a.memberStatus] - statusRank[b.memberStatus];
+        return cmp === 0 ? a.name.localeCompare(b.name) : (sortOrder === 'asc' ? cmp : -cmp);
       }
 
       // Extract numeric ratings or default to -Infinity for unrated so they fall to bottom when descending
@@ -96,7 +109,7 @@ function OnlineStats() {
       // Tie-breaker: Name asc
       return a.name.localeCompare(b.name);
     });
-  }, [sortKey, sortOrder]);
+  }, [sortKey, sortOrder, showRetired]);
 
   return (
     <main className="main-content">
@@ -104,7 +117,13 @@ function OnlineStats() {
         <h2>Online Stats</h2>
         <div className="header-meta">
           <p>Ratings are refreshed daily from public profiles.</p>
-          <p>Last updated: {updatedAt}</p>
+          <div className="update-row">
+            <p>Last updated: {updatedAt}</p>
+            <label className="retired-toggle">
+              <input type="checkbox" checked={showRetired} onChange={(event) => setShowRetired(event.target.checked)} />
+              Show retired members
+            </label>
+          </div>
         </div>
       </header>
       
@@ -118,7 +137,11 @@ function OnlineStats() {
                   Name {sortKey === 'name' && (sortOrder === 'asc' ? '↑' : '↓')}
                 </button>
               </th>
-              <th className="col-status">Status</th>
+              <th className="col-status">
+                <button onClick={() => handleSort('status')}>
+                  Status {sortKey === 'status' && (sortOrder === 'asc' ? '↑' : '↓')}
+                </button>
+              </th>
               <th className="col-rating">
                 <button onClick={() => handleSort('leetcode')}>
                   LeetCode {sortKey === 'leetcode' && (sortOrder === 'asc' ? '↑' : '↓')}
