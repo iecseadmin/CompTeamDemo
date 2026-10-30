@@ -71,6 +71,10 @@ jobs:
       - name: Security audit
         shell: pwsh
         run: npm audit --omit=dev --audit-level=high
+
+      - name: Fetch updated ratings
+        shell: pwsh
+        run: npm run fetch:ratings
         
       - name: Build static site
         shell: pwsh

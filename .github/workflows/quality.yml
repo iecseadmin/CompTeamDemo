@@ -2,21 +2,6 @@ name: Quality checks
 
 on:
   push:
-    paths:
-      - 'src/**'
-      - 'scripts/**'
-      - 'public/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'vite.config.ts'
-      - 'index.html'
-      - 'members.csv'
-      - 'tools/**'
-      - 'tsconfig*.json'
-      - '.oxlintrc.json'
-      - '.stylelintrc.json'
-      - '.htmlhintrc'
-      - '.github/workflows/**'
   pull_request:
     branches: ["main", "master"]
     paths:
@@ -71,6 +56,11 @@ jobs:
       - name: Validate data schemas
         shell: pwsh
         run: npm run validate:data
+
+      - name: Fetch updated ratings on push
+        if: github.event_name == 'push'
+        shell: pwsh
+        run: npm run fetch:ratings
 
       - name: Build static site
         shell: pwsh
