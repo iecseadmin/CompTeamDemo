@@ -1,91 +1,341 @@
 [
   {
-    "name": "Ada Lovelace",
-    "memberStatus": "Board Team Member",
-    "leetcode": {
-      "status": "error",
-      "rating": null,
-      "username": "ada_l"
-    },
-    "codeforces": {
-      "status": "ok",
-      "rating": "1382",
-      "username": "adalovelace"
-    },
-    "codechef": {
-      "status": "ok",
-      "rating": null,
-      "username": null
-    },
-    "atcoder": {
-      "status": "not-found",
-      "rating": null,
-      "username": "ada1815"
-    },
-    "updatedAt": "2026-09-22T06:52:45.196Z"
-  },
-  {
-    "name": "Alan Turing",
-    "memberStatus": "Retired",
-    "leetcode": {
-      "status": "error",
-      "rating": null,
-      "username": "turing_a"
-    },
-    "codeforces": {
-      "status": "ok",
-      "rating": "1398",
-      "username": "aturing"
-    },
-    "codechef": {
-      "status": "ok",
-      "rating": null,
-      "username": "alant"
-    },
-    "atcoder": {
-      "status": "not-found",
-      "rating": null,
-      "username": "alanturing"
-    },
-    "updatedAt": "2026-09-22T06:52:45.196Z"
-  },
-  {
-    "name": "Grace Hopper",
+    "name": "Aarith Reddy",
     "memberStatus": "Senior Team",
     "leetcode": {
       "status": "ok",
       "rating": null,
-      "username": "grace_h"
+      "username": "aarithreddy"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "862",
+      "username": "melb"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Aditya Prakash",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Aditya S",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "1179",
+      "username": "Adityasssss"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Amarnath K",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "627",
+      "username": "amrnth"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Ashmit Singh Saggu",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "ashgd2"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "1050",
+      "username": "ash.gd2"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Dhruv Ramesha Nayak",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "drsnayak21"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "861",
+      "username": "dhruvnayak2122"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": "beetroot21"
+    },
+    "atcoder": {
+      "status": "not-found",
+      "rating": null,
+      "username": "drnayak21"
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Divyansh Shukla",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "Divyansh_1809"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "1051",
+      "username": "Divyansh_18"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Divyanshu Srivastava",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Keerat Singh Chawla",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "955",
+      "username": "molecularity"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Kushal Bhattad",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "kushallb"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": "\n   ",
+      "username": "good_whirl_67"
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Navya Goel",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "noviee"
     },
     "codeforces": {
       "status": "error",
       "rating": null,
-      "username": "graceh"
+      "username": "navya87"
     },
     "codechef": {
       "status": "ok",
       "rating": null,
-      "username": "hopper_c"
+      "username": "navy87"
     },
     "atcoder": {
       "status": "ok",
       "rating": null,
       "username": null
     },
-    "updatedAt": "2026-09-22T06:52:45.196Z"
+    "updatedAt": "2026-10-30T18:24:50.400Z"
   },
   {
-    "name": "Linus Torvalds",
+    "name": "Roonil03",
+    "memberStatus": "Retired",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "Roonil03"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "1951",
+      "username": "Roonil03"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": "\n   ",
+      "username": "roonil03"
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Samyak Jain",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "samyak_1"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "779",
+      "username": "Samyak108"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Shaurya Pratap Srivastava",
     "memberStatus": "Junior Team",
     "leetcode": {
       "status": "ok",
       "rating": null,
-      "username": "torvalds"
+      "username": "rising1legend"
     },
     "codeforces": {
       "status": "ok",
-      "rating": null,
-      "username": null
+      "rating": "1238",
+      "username": "rising1legend"
     },
     "codechef": {
       "status": "ok",
@@ -97,31 +347,156 @@
       "rating": null,
       "username": null
     },
-    "updatedAt": "2026-09-22T06:52:45.196Z"
+    "updatedAt": "2026-10-30T18:24:50.400Z"
   },
   {
-    "name": "Margaret Hamilton",
+    "name": "Sridhar Devarakonda",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "1033",
+      "username": "CelestialRex"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": "finalinvictus"
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Subhangi Banerjee",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "TTF35mYGZX"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "929",
+      "username": "cressica"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": "subhangibanerj"
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Syed Mohammad Haider",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "haiderdotpy"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "888",
+      "username": "mdhaider7"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": "\n   ",
+      "username": "haiderdotpy"
+    },
+    "atcoder": {
+      "status": "not-found",
+      "rating": null,
+      "username": "haid3r"
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Ujjwal Potukchi",
     "memberStatus": "Junior Team",
     "leetcode": {
       "status": "ok",
       "rating": null,
-      "username": "m_hamilton"
+      "username": "APg2IlbYgw"
     },
     "codeforces": {
-      "status": "error",
-      "rating": null,
-      "username": "m_hamilton"
+      "status": "ok",
+      "rating": "603",
+      "username": "buttonistuff"
     },
     "codechef": {
       "status": "ok",
       "rating": null,
-      "username": "mhamilton"
+      "username": null
     },
     "atcoder": {
       "status": "ok",
       "rating": null,
       "username": null
     },
-    "updatedAt": "2026-09-22T06:52:45.196Z"
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Vansh Chaudhary",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "duatdev"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "793",
+      "username": "duat"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "atcoder": {
+      "status": "not-found",
+      "rating": null,
+      "username": "duat"
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
+  },
+  {
+    "name": "Vedant Agrawal",
+    "memberStatus": "Senior Team",
+    "leetcode": {
+      "status": "ok",
+      "rating": null,
+      "username": "user7774CM"
+    },
+    "codeforces": {
+      "status": "ok",
+      "rating": "627",
+      "username": "lowkeygoated"
+    },
+    "codechef": {
+      "status": "ok",
+      "rating": "\n   ",
+      "username": "bulletprone"
+    },
+    "atcoder": {
+      "status": "ok",
+      "rating": null,
+      "username": null
+    },
+    "updatedAt": "2026-10-30T18:24:50.400Z"
   }
 ]
