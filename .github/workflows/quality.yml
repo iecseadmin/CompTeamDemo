@@ -1,0 +1,77 @@
+name: Quality checks
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'public/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'vite.config.ts'
+      - 'index.html'
+      - 'members.csv'
+      - 'tools/**'
+      - 'tsconfig*.json'
+      - '.oxlintrc.json'
+      - '.stylelintrc.json'
+      - '.htmlhintrc'
+      - '.github/workflows/**'
+  pull_request:
+    branches: ["main", "master"]
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'public/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'vite.config.ts'
+      - 'index.html'
+      - 'members.csv'
+      - 'tools/**'
+      - 'tsconfig*.json'
+      - '.oxlintrc.json'
+      - '.stylelintrc.json'
+      - '.htmlhintrc'
+      - '.github/workflows/**'
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        shell: pwsh
+        run: npm ci
+
+      - name: Lint source
+        shell: pwsh
+        run: npm run lint
+
+      - name: Lint CSS
+        shell: pwsh
+        run: npm run lint:css
+
+      - name: Lint HTML
+        shell: pwsh
+        run: npm run lint:html
+
+      - name: Validate data schemas
+        shell: pwsh
+        run: npm run validate:data
+
+      - name: Build static site
+        shell: pwsh
+        run: npm run build

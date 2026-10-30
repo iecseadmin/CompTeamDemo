@@ -11,6 +11,10 @@ on:
       - 'package-lock.json'
       - 'vite.config.ts'
       - 'index.html'
+      - 'tsconfig*.json'
+      - '.oxlintrc.json'
+      - '.stylelintrc.json'
+      - '.htmlhintrc'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
@@ -43,6 +47,18 @@ jobs:
       - name: Install dependencies
         shell: pwsh
         run: npm ci
+
+      - name: Lint source
+        shell: pwsh
+        run: npm run lint
+
+      - name: Lint CSS
+        shell: pwsh
+        run: npm run lint:css
+
+      - name: Lint HTML
+        shell: pwsh
+        run: npm run lint:html
 
       - name: Validate data schemas
         shell: pwsh
