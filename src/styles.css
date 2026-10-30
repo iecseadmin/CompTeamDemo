@@ -263,6 +263,35 @@ tr:hover td {
 .col-status { width: 22%; }
 .col-rating { width: 12%; }
 
+.roonil-name {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.roonil-name::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: linear-gradient(110deg, transparent 30%, #d9ad59 50%, transparent 70%);
+  opacity: 0;
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.roonil-name:hover::after {
+  animation: roonil-gold-streak 700ms ease-in-out 1;
+}
+
+@keyframes roonil-gold-streak {
+  10%, 80% { opacity: 0.85; }
+  100% { opacity: 0; transform: translateX(100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .roonil-name:hover::after { animation: none; }
+}
+
 .status-badge {
   display: inline-block;
   padding: 0.1rem 0;

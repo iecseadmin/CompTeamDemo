@@ -169,7 +169,9 @@ function OnlineStats() {
               const statusClass = member.memberStatus.toLowerCase().replace(/ /g, '-');
               return (
                 <tr key={member.name}>
-                  <td className="col-name">{member.name}</td>
+                  <td className="col-name">
+                    {member.name === 'Roonil03' ? <span className="roonil-name">{member.name}</span> : member.name}
+                  </td>
                   <td className="col-status">
                     <span className={`status-badge status-${statusClass}`}>{member.memberStatus}</span>
                   </td>
