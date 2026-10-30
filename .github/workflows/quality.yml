@@ -2,6 +2,21 @@ name: Quality checks
 
 on:
   push:
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'public/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'vite.config.ts'
+      - 'index.html'
+      - 'members.csv'
+      - 'tools/**'
+      - 'tsconfig*.json'
+      - '.oxlintrc.json'
+      - '.stylelintrc.json'
+      - '.htmlhintrc'
+      - '.github/workflows/**'
   pull_request:
     branches: ["main", "master"]
     paths:
@@ -42,14 +57,17 @@ jobs:
         run: npm ci
 
       - name: Lint source
+        if: github.event_name == 'push'
         shell: pwsh
         run: npm run lint
 
       - name: Lint CSS
+        if: github.event_name == 'push'
         shell: pwsh
         run: npm run lint:css
 
       - name: Lint HTML
+        if: github.event_name == 'push'
         shell: pwsh
         run: npm run lint:html
 
