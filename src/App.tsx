@@ -5,6 +5,9 @@ import ratingsData from './data/ratings.json';
 type ViewState = 'online' | 'offline';
 type SortKey = 'name' | 'leetcode' | 'codeforces' | 'codechef' | 'atcoder';
 type SortOrder = 'asc' | 'desc';
+type RatingValue = { username: string | null, rating: string | number | null, status: string };
+type RatingKey = Exclude<SortKey, 'name'>;
+type RatingRow = typeof ratingsData[number];
 
 function Navigation({ currentView, setView }: { currentView: ViewState, setView: (v: ViewState) => void }) {
   return (
@@ -35,7 +38,7 @@ function Navigation({ currentView, setView }: { currentView: ViewState, setView:
   );
 }
 
-function RatingCell({ ratingObj, platformName }: { ratingObj: any, platformName: string }) {
+function RatingCell({ ratingObj, platformName }: { ratingObj: RatingValue, platformName: string }) {
   if (!ratingObj || !ratingObj.username || ratingObj.rating === null || ratingObj.rating === 'N/A' || ratingObj.status !== 'ok') {
     return <span className="na-text">N/A</span>;
   }
@@ -78,7 +81,7 @@ function OnlineStats() {
       }
 
       // Extract numeric ratings or default to -Infinity for unrated so they fall to bottom when descending
-      const getVal = (row: any, key: string) => {
+      const getVal = (row: RatingRow, key: RatingKey) => {
         const r = row[key]?.rating;
         return (typeof r === 'number') ? r : -Infinity;
       };
